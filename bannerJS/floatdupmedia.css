@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+@media(max-width:800px){
+		#wraper{
+				width:700px;
+				background-clip:content-box;
+				position:absolute;
+				top:150px;
+				left:0px;
+			}
+	}
+

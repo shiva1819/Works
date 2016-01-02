@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+	body{
+		margin:0px;
+		padding:0px;	
+	}
+		#left{
+				width:50px;
+				height:100px;
+				background-color:#000;
+				position:absolute;
+				top:50%;
+				left:0px;
+				opacity:0.5;
+			}
+		#ne{
+				position:absolute;
+				width:30px;
+				height:2px;
+				background-color:#fff;
+				top:48%;
+				left:15%;	
+				transform:rotate(-25deg);
+				transform-origin:30% 0%;
+				transition:0.5s;
+			}
+		#left:hover #ne{
+				transform-origin:20% 0%;
+				transform:rotate(-35deg);
+			
+			}
+		#nu{
+				position:absolute;
+				width:30px;
+				height:2px;
+				background-color:#fff;
+				top:60%;
+				left:15%;
+				transform:rotate(25deg);
+				transform-origin:60% 0%;
+				transition:0.5s;
+			}
+		#left:hover #nu{
+				transform:rotate(35deg);
+				transform-origin:50% 0%;
+			
+			}
+
+
+		#right{
+				width:50px;
+				height:100px;
+				background-color:#000;
+				position:absolute;
+				top:50%;
+				right:0%;
+				opacity:0.5;
+			}							
+			#nee{
+				width:30px;
+				height:2px;
+				background-color:#fff;
+				position:absolute;
+				top:50%;
+				right:15%;
+				transform:rotate(25deg);
+				transition:0.5s;
+				transform-origin:100% 50%;
+			}
+			#right:hover #nee{
+				transform:rotate(35deg)	
+			}
+			#nuu{
+				width:30px;
+				height:2px;
+				background-color:#ffF;
+				position:absolute;
+				top:50%;
+				right:15%;
+				transform:rotate(-25deg);
+				transform-origin:100% 50%;
+				transition:0.5s;
+				z-index:12;
+			}
+			#right:hover #nuu{
+				transform:rotate(-35deg)	
+			}
+		#main{
+			background-image:url(image.jpg);
+			background-repeat:no-repeat;
+			background-size:cover;
+			position:relative;
+			top:0px;
+			left:0px;
+			z-index:0;			
+		}
+		#main ul{
+			margin:0px;
+			padding:0px;
+			position:absolute;
+			list-style:none;
+			bottom:6%;
+			left:35%;
+		}
+		#main ul li{
+			display:inline-block;
+			width:100px;
+			text-align:center;
+			border-radius:10%;
+			color:#fff;
+			font-weight:900;
+			font-size:24px;
+			line-height:50px;
+			box-sizing:border-box;
+			transition:0.5s;
+		}
+	#main ul li:hover{
+		background-color:#000;
+		opacity:0.7;
+	}
+    </style>
+</head>
+
+<body>
+	<div id="main">
+    <div id="left">
+        <div id="ne"></div>
+        <div id="nu"></div>
+    </div>	
+    	<ul>
+        	<li>Home</li>
+        	<li>About</li>            
+        	<li>Gallery</li>            
+        	<li>Contact</li>            
+        </ul>
+    
+    <div id="right">
+        <div id="nee"></div>
+        <div id="nuu"></div>
+    </div>
+    
+    </div>
+</body>
+<script>
+	var neeeew = document.getElementById("main");
+	var h = window.innerHeight;
+	var w = window.innerWidth;
+	neeeew.style.height = h+"px";
+</script>
+</html>
